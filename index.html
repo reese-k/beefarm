@@ -5,23 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./resources/style.css">
     <title>Dampier's Bee Farm, LLC</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">  
     <link rel="shortcut icon" href="resources/favicon.ico" type="image/x-icon">
     <link rel="icon" href="resources/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="resources/style.css">
+
   </head>
 
   <body>
     <header>
-      <nav class="left">
+      <nav>
         <ul>
             <li><a href="#">Bee Farm</a></li>
             <li><a href="#">Products</a></li>
          </ul>
-      </nav>
       <img src="resources/photos/IMG_0676 bee wax white.JPG" alt="logo">
-      <nav class="right">
         <ul>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Contact Us</a></li>
@@ -34,50 +33,56 @@
         <p>Locally produced honey and other products</p>
     </div>
 
-    <div>
+    <div class="info-card">
       <div>
-        <i class="fa-solid fa-location-dot"></i>
+        <img src="">
         <p>Local</p>
       </div>
       <div>
-        <i class="fa-solid fa-honey-pot"></i>
+        <img src="">
         Pure
       </div>
       <div>
-        <i class="fa-regular fa-bee"></i>
+        <img src="">
         <p>Quality</p>
       </div>
       <div>
-        <p>Hand delivered from us to you! <i class="fa-regular fa-heart"></i></p>
+        <p>Hand delivered from us to you!</p>
         <p>See contact information <a href="#contact-info">below</a></p>
       </div>
     </div>
 
     <div class="products">
-      <div>
-        <img src alt="honey">
+      
+      <div class="honey">
+        <img src="resources/photos/honey.JPG" alt="honey">
         <p>Honey</p>
         <p><strong>1lb $10</strong></p>
         <p><strong>2lb $20</strong></p>
       </div>
-      <div>
-        <img alt="beeswax">
+
+      <div class="beeswax">
+        <img src="resources/photos/beeswax.JPEG" alt="beeswax">
         <p>Beeswax</p>
         <p><strong>1oz $3</strong></p>
       </div>
-      <div>
-        <img alt="beeswax candles">
+
+      <div class="candles">
+        <img src="resources/photos/candle.JPG" alt="beeswax candles">
         <p>Beeswax Candles</p>
         <p><strong>2 candles $10</strong></p>
       </div>
-      <div>
-        <img alt="beeswax wrap">
+
+      <div class="wrap">
+        <img src="resources/photos/beeswax_wrap.JPG" alt="beeswax wrap">
         <p>Beeswax Wrap</p>
         <p><strong>Small (one 5x5 & one 8x8) $8</strong></p>
         <p><strong>Large (one 9x9 & one 12x12) $15</strong></p>
         <p>Patterns based on availability.</p>
       </div>
+
     </div>
+
 
     <div class="about-us">
       <div class="dampier">
@@ -89,25 +94,25 @@
       </div>
 
       <div>
-        <img src="#" alt="bee farm">
+        <img src="resources/photos/beebox.JPG" alt="bee farm">
       </div>
 
       <div class="employees">
         <h5>Employees</h5>
-      </div>
 
-      <div>
-        <img src="#" alt="employee of the month">
-      </div>
+        <div>
+          <img src="resources/photos/honey_cat.JPG" alt="employee of the month">
+        </div>
       
-      <div>
-        <p>Meet Honey, our most valued employee!</p>
-        <p>Honey provides a list of services including quality control, farm management, and security and surveillance.</p>
+        <div>
+          <p>Meet Honey, our most valued employee!</p>
+          <p>Honey provides a list of services including quality control, farm management, and security and surveillance.</p>
+        </div>
       </div>
     </div>
   </body>
 
-  <footer class="contact-info">
-    <p><strong>P|229-415-0127 E|dampiersbeefarmllc@gmail.com</strong></p>
+  <footer id="contact-info">
+    <p><strong>Contact Us! P|229-415-0127 E|<a href="mailto:dampiersbeefarmllc@gmail.com">dampiersbeefarmllc@gmail.com</a></strong></p>
   </footer>
 </html>
