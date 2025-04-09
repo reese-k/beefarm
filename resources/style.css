@@ -3,14 +3,14 @@
 }
 
 div {
-    border: 3px solid blueviolet;
+    
 }
+
 
 header { 
     background-color: #F8F1E1;
     width: 100%;
     height: auto;
-    border: 1px solid black;
 }
 
 header img {
@@ -29,6 +29,8 @@ nav {
     flex-flow: row nowrap;
     justify-content: space-around;
     margin-left: 0;
+    z-index: 1;
+    border: 1px solid #47321f;
 }
 
 nav a {
@@ -39,30 +41,101 @@ nav a {
 
 body {
     background-color: #FDE399;
+    color: #47321f;
     position: absolute;
-    top: 10%;
+    top: 9%;
     width: 100%;
     margin-left: 0;
+   
 }
 
-.banner {
-    background-image: url("/resources/photos/bee_candle.banner.JPG");
-    background-size: cover;
-    background-repeat: no-repeat;
-    
+.heading {
+    height: auto;
+    width: 90%;
+    font-family: 'Dancing Script','Times New Roman', Times, serif;
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+    margin: 0 auto;
+    font-weight: 200;
+}
 
+.section {
+    width: 90%;
+    background-color: #F8F1E1;
+    background-image: url('./photos/bee-line-cartoon-illustration-.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 45%;
+    overflow: hidden;
+    margin: 0 auto 1%;
 }
 
 .info-card {
-    background-color: #47321f;
-    color: #F8F1E1;
+    color: #F8F1E1!important;
     width: 60%;
-    margin: 5% auto;    
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2% auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
-.info-card a {
-    color: #BB5927;
+.circle {
+    background-color: #f5b82d;
+    color: #47321f;
+    width: 120px;
+    height: 120px;
+    padding: 7%;
+    font-family: 'Dancing Script','Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid #47321f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.circle p {
+    font-weight: 900;
+}
+
+.info {
+    background-color: #f5b82d;
+    color: #47321f;
+    width: 85%;
+    text-align: center;
+    font-family: 'Dancing Script','Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    margin: 0 auto 2%;
+    padding: 2px 0;
+    border: 1px solid #47321f;
+    font-weight: 700;
+}
+
+.info h4 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 5px;
+}
+.info a {
+    color: #47321f;
+}
+
+.title {
+    display: block;
+    width: 100%;
+    font-size: 2.5rem;
+    color: #F8F1E1;
+    font-family: 'Dancing Script','Times New Roman', Times, serif;
+    text-align: center;
+    text-decoration: underline;
+}
+
 .products img {
     width: 100%;
     height: auto;
@@ -74,14 +147,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 5% 0; 
-    width: 85%;
-    margin: 0 auto;
+    padding-bottom: 5%;
+    width: 98%;
+    margin: 0 auto 1%;
 }
 
+.products p,
 .products h3 {
-    
-    text-align: center;
+   padding-left: 15px;
 }
 
 .honey,
@@ -91,23 +164,89 @@ body {
     background-color: #F8F1E1;
     width: 30%;
     height: auto;
-    margin: 20px;
-}
-
-.about-us img{
-    width: 30%;
-    height: auto;
-    overflow: hidden;
+    margin: 20px 30px;
+    border: 1px solid #47321f;
+    border-radius: 5px;
 }
 
 .about-us,
 .employees {
     background-color: #F8F1E1;
+    width: 98%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.about-us .title,
+.employees .title {
+    color: #47321f;
+    font-size: 2rem;
     width: 100%;
+    border: 1px solid #47321f;
+}
+
+.dampier {
+    background-color: #f5b82d;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    align-content: center;
+}
+
+.dampier-img {
+    background-color: #f5b92de0;
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+}
+
+.dampier-img img {
+    width: 95%;
+    height: 95%;
+    overflow: hidden;
+    margin: 2% 0 0 2.5%;
+    border: 1px solid #47321f;
+}
+
+.cat {
+    background-color: #e7992be0 ;
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+}
+
+.cat img {
+    width: 95%;
+    height: 95%;
+    overflow: hidden;
+    margin: 2% 0 0 2.5%;
+    border: 1px solid #47321f;
+}
+
+.honey-cat {
+    background-color: #E7982B;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    align-content: center;
+}
+
+.dampier h4,
+.honey-cat h4 {
+    font-family: 'Dancing Script','Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+
+.dampier p,
+.honey-cat p {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 footer {
-    background-color: #BB5927;
+    background-color: #F8F1E1;
     text-align: center;
     line-height: 2rem;
     border: 1px solid blueviolet;
@@ -116,3 +255,8 @@ footer {
 footer a {
     color: #47321f;
 }
+
+
+
+
+
