@@ -25,12 +25,25 @@ nav {
     top: 0;
     right: 0;
     width: 100%;
-    display: inline-flex;
-    flex-flow: row nowrap;
+    display: flex;
     justify-content: space-around;
     margin-left: 0;
     z-index: 1;
     border: 1px solid #47321f;
+}
+
+nav li {
+    list-style-type: none;
+    text-decoration: underline;
+    display: inline;
+    margin: auto 12px;
+}
+
+
+@media only screen and (max-width: 620px) {
+    nav ul {
+        display: none;
+    }    
 }
 
 nav a {
@@ -126,6 +139,13 @@ body {
     color: #47321f;
 }
 
+@media only screen and (max-width: 620px) {
+    .section {
+        margin: 0 auto;
+    }    
+
+}
+
 .title {
     display: block;
     width: 100%;
@@ -167,6 +187,22 @@ body {
     margin: 20px 30px;
     border: 1px solid #47321f;
     border-radius: 5px;
+}
+
+@media only screen and (max-width: 620px) {
+    .honey,
+    .beeswax,
+    .candles,
+    .wrap {
+        display: flex;
+        flex-flow: column wrap;
+        width: 80%;
+        margin: 0 auto 1%;
+    }
+
+    .products {
+        margin: 0 auto;
+    }
 }
 
 .about-us,
