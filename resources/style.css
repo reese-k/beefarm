@@ -56,7 +56,7 @@ body {
     background-color: #FDE399;
     color: #47321f;
     position: absolute;
-    top: 9%;
+    top: 5%;
     width: 100%;
     margin-left: 0;
    
@@ -201,6 +201,7 @@ body {
     }
 
     .products {
+        width: 95%;
         margin: 0 auto;
     }
 }
