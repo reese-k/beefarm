@@ -193,6 +193,7 @@ body {
         flex-flow: column wrap;
         width: 80%;
         margin: 0 auto 1%;
+        font-size: .90rem;
     }
 
     .products {
@@ -236,9 +237,9 @@ body {
 
 .dampier-img img {
     width: 95%;
-    height: 95%;
+    height: auto;
     overflow: hidden;
-    margin: 2% 0 0 2.5%;
+    margin: 2% 0 1.5% 2.5%;
     border: 1px solid #47321f;
 }
 
@@ -251,9 +252,9 @@ body {
 
 .cat img {
     width: 95%;
-    height: 95%;
+    height: auto;
     overflow: hidden;
-    margin: 2% 0 0 2.5%;
+    margin: 2% 0 1.5% 2.5%;
     border: 1px solid #47321f;
 }
 
@@ -275,6 +276,18 @@ body {
 .honey-cat p {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+@media only screen and (max-width: 620px) {
+    .dampier p,
+    .honey-cat p {
+        font-size: .85rem;
+    }
+
+    .dampier h4,
+    .honey-cat h4 {
+        font-size: 1.25rem;
+    }
 }
 
 footer {
